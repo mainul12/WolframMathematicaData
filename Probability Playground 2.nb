@@ -1,0 +1,194 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{"x",","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"NormalDistribution","[",RowBox[{"1",","," ","3"}],"]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[3]:= ",ExpressionUUID -> "ceb480fb-c9b7-47e9-96dd-9a19a1759e0b"],Cell[
+BoxData[
+"1",StandardForm],"Output",CellLabel -> "Out[3]= ",ExpressionUUID -> "1a6534b6-409f-43b0-9825-358a2687c8e2"]},
+Open],ExpressionUUID -> "4631ac81-b147-454f-993b-c8e088ea6aae"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{RowBox[{RowBox[{"2","x"}],"+","3"}],","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"NormalDistribution","[",RowBox[{"1",","," ","3"}],"]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[4]:= ",ExpressionUUID -> "ebf5b6f9-9d95-42e3-9adc-1d5f9c80664b"],Cell[
+BoxData[
+"5",StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "e35aa113-f6a4-4575-985b-ec3171d88245"]},
+Open],ExpressionUUID -> "8ba9df87-6183-4d1f-87fe-05ea9a839e40"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{"x",","," ",RowBox[{"x","\[Distributed]",RowBox[
+{"NormalDistribution","[",RowBox[{"a",","," ","b"}],"]"}]}]}],"]"}]],"Input",CellLabel -> "In[5]:= ",
+ExpressionUUID -> "b928d820-c604-4185-826e-957d4cdff17b"],Cell[
+BoxData["a",StandardForm],
+"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "eab6d16e-d342-4761-83ae-ee4a60d42d30"]},
+Open],ExpressionUUID -> "ee3087ce-7bb1-48b5-9883-50e2f7f44125"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{RowBox[{RowBox[{"2","x"}],"+","3"}],","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"NormalDistribution","[",RowBox[{"a",","," ","b"}],"]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[6]:= ",ExpressionUUID -> "df1a02b4-a5d7-43be-87ce-ccc1415bc312"],Cell[
+BoxData[
+RowBox[{"3","+",RowBox[{"2"," ","a"}]}],StandardForm],"Output",CellLabel -> "Out[6]= ",
+ExpressionUUID -> "444ef2d0-e6bc-4560-96d0-617e8e9a9266"]},Open],ExpressionUUID -> "c26990cb-e2f3-47d2-a929-8b1e8362c683"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"NProbability","[",RowBox[{RowBox[{"x","<","70"}],",",RowBox[
+{"x","\[Distributed]",RowBox[{"NormalDistribution","[",RowBox[{"80",",","10"}],"]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "6d6be3b2-3aef-46a0-ae23-ad89f00e85e4"],Cell[
+BoxData[
+"0.15865525393140392`",StandardForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "e7c8d7b8-a603-4553-8da5-2543ad73cc9e"]},
+Open],ExpressionUUID -> "65262f1c-7ef4-409b-b82c-3eeece6218db"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Quantile","[",RowBox[{RowBox[{"NormalDistribution","[",RowBox[
+{"1100",","," ","75"}],"]"}],","," ",RowBox[{"95","/","100"}]}],"]"}]],"Input",CellLabel -> "In[2]:= ",
+ExpressionUUID -> "fbc0803c-a7df-44f2-9343-754fa35861cd"],Cell[
+BoxData[RowBox[{"1100","+",RowBox[
+{"75"," ",SqrtBox["2"]," ",RowBox[{"InverseErfc","[",FractionBox["1","10"],"]"}]}]}],
+StandardForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "afe62eab-0a97-4de2-ae00-e134f32f70df"]},
+Open],ExpressionUUID -> "954f6867-45ee-435e-84ea-7f44ba76f59a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"N","[",RowBox[{"1100","+",RowBox[{"75"," ",SqrtBox["2"]," ",RowBox[
+{"InverseErfc","[",FractionBox["1","10"],"]"}]}]}],"]"}]],"Input",NumberMarks -> False,
+CellLabel -> "In[3]:= ",ExpressionUUID -> "82677eae-0167-4444-911a-44ff1241214c"],Cell[
+BoxData[
+"1223.3640220213604`",StandardForm],"Output",CellLabel -> "Out[3]= ",ExpressionUUID -> "7120fd85-4055-4a0e-9ce6-beb3415ed4a7"]},
+Open],ExpressionUUID -> "1cc60179-9dcd-4460-a42f-844d4170e3a4"],Cell[
+BoxData[RowBox[
+{RowBox[{"data"," ","="," ",RowBox[{"RandomVariate","[",RowBox[{RowBox[{"NormalDistribution","[",RowBox[
+{"1100",","," ","75"}],"]"}],","," ","100"}],"]"}]}],";"}]],"Input",CellLabel -> "In[4]:= ",
+ExpressionUUID -> "c020a037-d7f3-424e-9407-32e1efb2eb93"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"Quantile","[",RowBox[{"data",","," ",RowBox[{"95","/","100"}]}],"]"}]],"Input",
+CellLabel -> "In[5]:= ",ExpressionUUID -> "d3024416-5cd5-482a-94ae-1819a9c35f72"],Cell[
+BoxData[
+"1203.2940741700834`",StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "127c70af-cf35-40d4-b92e-ea41eff79296"]},
+Open],ExpressionUUID -> "b347656f-68a0-4aeb-8282-a578721569b3"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Mean","[","data","]"}]],"Input",CellLabel -> "In[6]:= ",ExpressionUUID -> "4bf6152f-6ed5-4435-a200-66b8a0ef4610"],Cell[
+BoxData[
+"1096.3639487148578`",StandardForm],"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "fe873c64-2059-4c9a-9daa-2d037b6246e7"]},
+Open],ExpressionUUID -> "a5632311-5475-4b73-83cd-4f01c45dde3a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"NProbability","[",RowBox[{RowBox[{"x","==","4"}],",",RowBox[
+{"x"," ","\[Distributed]",RowBox[{"BinomialDistribution","[",RowBox[{"5",",","0.5"}],"]"}]}]}],"]"}]," ","+"," ",RowBox[
+{"NProbability","[",RowBox[{RowBox[{"x","==","5"}],",",RowBox[{"x"," ","\[Distributed]",RowBox[
+{"BinomialDistribution","[",RowBox[{"5",",","0.5"}],"]"}]}]}],"]"}]}]],"Input",CellLabel -> "In[9]:= ",
+ExpressionUUID -> "b69a2185-ea75-4056-b0dc-103bf0848820"],Cell[
+BoxData["0.1875`",
+StandardForm],"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "b1ae3957-637f-4ab6-acd5-59b19256a5d8"]},
+Open],ExpressionUUID -> "195f89b9-c9b9-400e-bb54-0e9b8dfdc73c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"NProbability","[",RowBox[{RowBox[{RowBox[{"x","==","4"}],"||",RowBox[
+{"x","==","5"}]}],",",RowBox[{"x"," ","\[Distributed]",RowBox[{"BinomialDistribution","[",RowBox[
+{"5",",","0.5"}],"]"}]}]}],"]"}]],"Input",CellLabel -> "In[11]:= ",ExpressionUUID -> "53e89231-a27e-4638-a5fd-b5c9108938f5"],Cell[
+BoxData[
+"0.1875`",StandardForm],"Output",CellLabel -> "Out[11]= ",ExpressionUUID -> "f634040a-8b4a-4dbb-9c3a-d8b7961629bc"]},
+Open],ExpressionUUID -> "3c4bd761-6c6c-4c2b-8413-1c725f07ad9a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"NProbability","[",RowBox[{RowBox[{"x","\[LessEqual]","10"}],",",RowBox[
+{"x"," ","\[Distributed]",RowBox[{"PoissonDistribution","[","15","]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[13]:= ",ExpressionUUID -> "416869cf-8b61-4fd3-abe8-44bdb1ae15d7"],Cell[
+BoxData[
+"0.1184644115290151`",StandardForm],"Output",CellLabel -> "Out[13]= ",ExpressionUUID -> "a48cf8c5-e2ef-49d8-bca1-784bb4080422"]},
+Open],ExpressionUUID -> "5fa06896-a9bd-45d3-bad4-271bab05c937"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"{",RowBox[{"20",",","21.5",",","26.8"}],"}"}],"*",RowBox[
+{"{",RowBox[{"0.1",",","0.7",",","0.2"}],"}"}]}]],"Input",CellLabel -> "In[4]:= ",
+ExpressionUUID -> "cbe42342-b3ae-4836-886b-c1040fa9ebfa"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"2.`",",","15.049999999999999`",",","5.36`"}],"}"}],StandardForm],"Output",CellLabel -> "Out[4]= ",
+ExpressionUUID -> "589e6792-0b5a-4bad-8da4-a4299c39adc4"]},Open],ExpressionUUID -> "8aa2ef3e-9f78-478c-bae7-f55163c94796"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Total","[",RowBox[{"{",RowBox[{"2.`",",","15.049999999999999`",",","5.36`"}],"}"}],"]"}]],
+"Input",NumberMarks -> False,CellLabel -> "In[5]:= ",ExpressionUUID -> "b1c93bc2-a547-46d1-a774-8c4e65df0cbc"],Cell[
+BoxData[
+"22.409999999999997`",StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "571efbd2-5919-4b0f-87d9-fbbdb4af3253"]},
+Open],ExpressionUUID -> "57c5630d-e9b2-4123-b6bb-2d7c41bc89a7"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"(",RowBox[{"20","*","22.41"}],")"}]," ","+"," ","100"}]],
+"Input",NumberMarks -> False,CellLabel -> "In[9]:= ",ExpressionUUID -> "fbb0fbe8-f705-4719-bbfd-0ad46eca46d5"],Cell[
+BoxData[
+"548.2`",StandardForm],"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "5dd6bc38-02e2-4957-87d8-51a89e2be1cf"]},
+Open],ExpressionUUID -> "8a83b82b-970b-4097-b95d-506f44b637c0"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{"x",",",RowBox[{"x","\[Distributed]",RowBox[
+{"BinomialDistribution","[",RowBox[{"150",","," ","0.03"}],"]"}]}]}],"]"}]],"Input",
+CellLabel -> "In[10]:= ",ExpressionUUID -> "b8409335-ba0a-44f2-bcea-758bde437184"],Cell[
+BoxData[
+"4.5`",StandardForm],"Output",CellLabel -> "Out[10]= ",ExpressionUUID -> "6c414c8e-aa16-4e79-8d72-19472a5b2cf5"]},
+Open],ExpressionUUID -> "aa131eb3-6f13-4506-9c69-32f43a8b2ec5"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"StandardDeviation","[",RowBox[{"BinomialDistribution","[",RowBox[
+{"150",","," ","0.03"}],"]"}],"]"}]],"Input",CellLabel -> "In[11]:= ",ExpressionUUID -> "4b357817-c03e-4409-8e5f-25cc8b96de0d"],Cell[
+BoxData[
+"2.089258241577618`",StandardForm],"Output",CellLabel -> "Out[11]= ",ExpressionUUID -> "a9e5bcf0-3db6-4cff-92b3-a8ae6b18015a"]},
+Open],ExpressionUUID -> "b380729b-8729-4439-bac6-1ea60a530add"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"StandardDeviation","[",RowBox[{"ExponentialDistribution","[","0.014","]"}],"]"}]],
+"Input",CellLabel -> "In[12]:= ",ExpressionUUID -> "449f34e7-6eb0-48dd-90ed-59200a93827d"],Cell[
+BoxData[
+"71.42857142857143`",StandardForm],"Output",CellLabel -> "Out[12]= ",ExpressionUUID -> "09fa3764-c65b-45c9-9520-edabc3b7bf9b"]},
+Open],ExpressionUUID -> "e6e2ca87-50d5-411b-81cf-dd10208ba3ab"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{"x",","," ",RowBox[{"x","\[Distributed]",RowBox[
+{"ExponentialDistribution","[","0.014","]"}]}]}],"]"}]],"Input",CellLabel -> "In[13]:= ",
+ExpressionUUID -> "8e17494b-2233-4a32-8b1c-3d56100c6092"],Cell[
+BoxData["71.42857142857143`",
+StandardForm],"Output",CellLabel -> "Out[13]= ",ExpressionUUID -> "ec61d2c8-3747-4fd3-abc5-733acf326373"]},
+Open],ExpressionUUID -> "2a3b9f72-a1a9-48da-8eee-4cb7ee2a13c6"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"71.42857142857143"," ","+"," ",RowBox[{"(",RowBox[{"2","*","71.42857142857143"}],")"}]}]],
+"Input",CellLabel -> "In[14]:= ",ExpressionUUID -> "b6c643e7-138a-4cee-a746-b940cd684ec7"],Cell[
+BoxData[
+"214.28571428571428`",StandardForm],"Output",CellLabel -> "Out[14]= ",ExpressionUUID -> "c54361f6-4a17-4405-b2cc-0cd9b635aee4"]},
+Open],ExpressionUUID -> "db0629dd-96ea-4e61-a43e-c7b6c78ef0c3"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"NProbability","[",RowBox[{RowBox[{"x",">","214.286"}],","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"ExponentialDistribution","[","0.014","]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[15]:= ",ExpressionUUID -> "c7e9d613-55a5-4ebb-bd91-047b514a1c60"],Cell[
+BoxData[
+"0.049786869222642215`",StandardForm],"Output",CellLabel -> "Out[15]= ",ExpressionUUID -> "cec28b9a-62ab-4eb0-8abe-47c9ba90c833"]},
+Open],ExpressionUUID -> "deefe9e8-7843-4d7e-8551-b6a78812155d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Expectation","[",RowBox[{RowBox[{"x","^","2"}],","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"PoissonDistribution","[","\[Lambda]","]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[16]:= ",ExpressionUUID -> "c1a8bd44-94d9-45a8-b88e-62d90da2d991"],Cell[
+BoxData[
+RowBox[{"\[Lambda]","+",SuperscriptBox["\[Lambda]","2"]}],StandardForm],"Output",
+CellLabel -> "Out[16]= ",ExpressionUUID -> "9d062847-a13d-40d4-b524-3c5a04d36c6f"]},
+Open],ExpressionUUID -> "8e118e70-d458-4ce4-b5ea-d6fc31d411dd"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Probability","[",RowBox[{RowBox[{RowBox[{"(",RowBox[{"x","\[GreaterEqual]","0.15"}],")"}],"||",RowBox[
+{"(",RowBox[{"x","\[LessEqual]",RowBox[{"-","0.15"}]}],")"}]}],","," ",RowBox[{"x","\[Distributed]",RowBox[
+{"NormalDistribution","[",RowBox[{"0",",","0.07"}]," ","]"}]}]}],"]"}]],"Input",CellLabel -> "In[6]:= ",
+ExpressionUUID -> "943d6a49-6f9f-4e31-8922-7b5dcfdae155"],Cell[
+BoxData["0.032124571207656626`",
+StandardForm],"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "c652d9fa-bf35-410f-9f0e-0ff32cbb6f2a"]},
+Open],ExpressionUUID -> "8784d18c-01a0-43ad-a520-7c2a75982ec9"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Probability","[",RowBox[{RowBox[{"x","\[GreaterEqual]","0.200"}],","," ",RowBox[
+{"x","\[Distributed]",RowBox[{"NormalDistribution","[",RowBox[{"0",",","0.07"}]," ","]"}]}]}],"]"}]],
+"Input",CellLabel -> "In[9]:= ",ExpressionUUID -> "8ac811cf-c2dc-454c-bf1d-ce034edaeebb"],Cell[
+BoxData[
+"0.0021373669800862803`",StandardForm],"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "37e0284a-ea89-4ff6-a5f4-ae6a88c43bc4"]},
+Open],ExpressionUUID -> "51e26b0a-5365-4268-9749-b0cef45a5cf0"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "12.3 for Wolfram Cloud 1.60 (September 28, 2021)"]
