@@ -1,0 +1,143 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      4526,        135]
+NotebookOptionsPosition[      3457,        110]
+NotebookOutlinePosition[      3867,        126]
+CellTagsIndexPosition[      3824,        123]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Two six sided dice are rolled and the numbers appearing on the dice are \
+added. \
+\>", "Text",
+ CellChangeTimes->{{3.868857408196873*^9, 
+  3.8688574323390846`*^9}},ExpressionUUID->"f3eef268-387e-4c99-a2a2-\
+a3cd9d1eb45e"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"die1", " ", "=", " ", 
+   RowBox[{"DiscreteUniformDistribution", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "6"}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"die2", " ", "=", " ", 
+   RowBox[{"DiscreteUniformDistribution", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", "6"}], "}"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.868857440231855*^9, 3.8688574919596443`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"ba3dccc0-4a6a-47c9-8f52-4a629102dc6a"],
+
+Cell["\<\
+Let E be the event that sum of the dice is 6. What is the probability of the \
+even E?\
+\>", "Text",
+ CellChangeTimes->{{3.868857517821114*^9, 
+  3.8688575479617434`*^9}},ExpressionUUID->"ab611904-0bdc-4967-b7ff-\
+fc714840d7a2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Probability", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Total", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       SubscriptBox["x", "1"], ",", " ", 
+       SubscriptBox["x", "2"]}], "}"}], "]"}], "==", " ", "6"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["x", 
+       RowBox[{"1", " "}]], "\[Distributed]", " ", "die1"}], ",", " ", 
+     RowBox[{
+      SubscriptBox["x", "2"], "\[Distributed]", " ", "die2"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868857566113707*^9, 3.868857683231883*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"02831c17-40b6-431f-8a07-22e11f0c58cf"],
+
+Cell[BoxData[
+ FractionBox["5", "36"]], "Output",
+ CellChangeTimes->{{3.8688576698287816`*^9, 3.86885768405989*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"89cd35c7-eb85-4c0d-8bff-7a27f5e87ec2"]
+}, Open  ]],
+
+Cell["Let F be the event that at least one of the dice is a 2", "Text",
+ CellChangeTimes->{{3.8688577259093437`*^9, 
+  3.8688577379735184`*^9}},ExpressionUUID->"48b8a16b-d9e7-4066-bd3b-\
+8dc44960f5b6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Probability", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "==", "2"}], "||", " ", 
+    RowBox[{
+     SubscriptBox["x", "2"], "==", " ", "2"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["x", 
+       RowBox[{"1", " "}]], "\[Distributed]", " ", "die1"}], ",", " ", 
+     RowBox[{
+      SubscriptBox["x", "2"], "\[Distributed]", " ", "die2"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868857753188689*^9, 3.8688577920560923`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"b0b1dc74-4b0e-4f46-b41f-be9d8b6bc314"],
+
+Cell[BoxData[
+ FractionBox["11", "36"]], "Output",
+ CellChangeTimes->{3.8688577930246124`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"145a82f1-5fca-4241-a25b-1546e83ae4b3"]
+}, Open  ]]
+},
+WindowSize->{581.25, 420.75},
+WindowMargins->{{215.25, Automatic}, {Automatic, 40.5}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 21, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d5e60735-eb4f-43e3-a472-84be764ec05c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 233, 6, 58, "Text",ExpressionUUID->"f3eef268-387e-4c99-a2a2-a3cd9d1eb45e"],
+Cell[797, 28, 526, 12, 48, "Input",ExpressionUUID->"ba3dccc0-4a6a-47c9-8f52-4a629102dc6a"],
+Cell[1326, 42, 238, 6, 58, "Text",ExpressionUUID->"ab611904-0bdc-4967-b7ff-fc714840d7a2"],
+Cell[CellGroupData[{
+Cell[1589, 52, 638, 18, 28, "Input",ExpressionUUID->"02831c17-40b6-431f-8a07-22e11f0c58cf"],
+Cell[2230, 72, 194, 3, 48, "Output",ExpressionUUID->"89cd35c7-eb85-4c0d-8bff-7a27f5e87ec2"]
+}, Open  ]],
+Cell[2439, 78, 201, 3, 35, "Text",ExpressionUUID->"48b8a16b-d9e7-4066-bd3b-8dc44960f5b6"],
+Cell[CellGroupData[{
+Cell[2665, 85, 601, 17, 28, "Input",ExpressionUUID->"b0b1dc74-4b0e-4f46-b41f-be9d8b6bc314"],
+Cell[3269, 104, 172, 3, 71, "Output",ExpressionUUID->"145a82f1-5fca-4241-a25b-1546e83ae4b3"]
+}, Open  ]]
+}
+]
+*)
+
