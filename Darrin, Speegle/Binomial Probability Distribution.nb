@@ -1,0 +1,115 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      3691,        107]
+NotebookOptionsPosition[      2807,         84]
+NotebookOutlinePosition[      3217,        100]
+CellTagsIndexPosition[      3174,         97]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Larsen 6th edition,  example 3.2.1", "Text",
+ CellChangeTimes->{{3.8688742563935966`*^9, 
+  3.868874275411358*^9}},ExpressionUUID->"6f27c64c-08fd-4dac-a735-\
+a83e5ed381be"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Probability", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", " ", "==", " ", "0"}], "||", 
+    RowBox[{"x", "==", "1"}], "||", 
+    RowBox[{"x", "==", "2"}]}], ",", " ", 
+   RowBox[{"x", "\[Distributed]", 
+    RowBox[{"BinomialDistribution", "[", 
+     RowBox[{"5", ",", " ", "0.01"}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.868873834464811*^9, 3.8688739097163987`*^9}, {
+  3.868873978496911*^9, 3.868873990835244*^9}, {3.868874056116721*^9, 
+  3.868874078033351*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"dbc12947-cf29-4fa3-aca7-8a72425a3cbe"],
+
+Cell[BoxData["0.9999901493999999`"], "Output",
+ CellChangeTimes->{
+  3.8688739922411366`*^9, {3.868874060131338*^9, 3.8688740790174923`*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"b6f70d3a-09ca-4e4c-a94e-185d597679d0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Probability", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", " ", "==", " ", "0"}], "||", 
+      RowBox[{"x", "==", "1"}], "||", 
+      RowBox[{"x", "==", "2"}]}], ",", " ", 
+     RowBox[{"x", "\[Distributed]", 
+      RowBox[{"BinomialDistribution", "[", 
+       RowBox[{"5", ",", " ", "p"}], "]"}]}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"0.01", ",", " ", "0.05", ",", " ", "0.10", ",", " ", "0.15"}], 
+      "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8688741541004543`*^9, 3.8688741918776197`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"29438083-0eb5-4535-8eda-5590e0c73237"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.9999901493999999`", ",", "0.998841875`", ",", "0.9914400000000003`", ",",
+    "0.9733881249999998`"}], "}"}]], "Output",
+ CellChangeTimes->{3.86887419345535*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"5f9fe96b-0fbb-4a23-9932-61573d7678e7"]
+}, Open  ]],
+
+Cell["Larsen 6th edition, example 3.2.2", "Text",
+ CellChangeTimes->{{3.8688743743167257`*^9, 
+  3.8688743846505823`*^9}},ExpressionUUID->"08eb5669-21ec-4696-861d-\
+8a7eedfcf54a"]
+},
+WindowSize->{581.25, 420.75},
+WindowMargins->{{215.25, Automatic}, {Automatic, 40.5}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 21, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ce4e29f2-6fbd-4692-ae48-171139b0f94b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 178, 3, 35, "Text",ExpressionUUID->"6f27c64c-08fd-4dac-a735-a83e5ed381be"],
+Cell[CellGroupData[{
+Cell[764, 27, 580, 13, 48, "Input",ExpressionUUID->"dbc12947-cf29-4fa3-aca7-8a72425a3cbe"],
+Cell[1347, 42, 219, 3, 32, "Output",ExpressionUUID->"b6f70d3a-09ca-4e4c-a94e-185d597679d0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1603, 50, 719, 18, 48, "Input",ExpressionUUID->"29438083-0eb5-4535-8eda-5590e0c73237"],
+Cell[2325, 70, 284, 6, 32, "Output",ExpressionUUID->"5f9fe96b-0fbb-4a23-9932-61573d7678e7"]
+}, Open  ]],
+Cell[2624, 79, 179, 3, 35, "Text",ExpressionUUID->"08eb5669-21ec-4696-861d-8a7eedfcf54a"]
+}
+]
+*)
+

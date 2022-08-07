@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      3769,        113]
+NotebookOptionsPosition[      3067,         92]
+NotebookOutlinePosition[      3477,        108]
+CellTagsIndexPosition[      3434,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Probability", "[", 
+  RowBox[{
+   RowBox[{"x", " ", "==", " ", "5"}], ",", " ", 
+   RowBox[{"x", "\[Distributed]", " ", 
+    RowBox[{"GeometricDistribution", "[", "0.03", "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8688726239366274`*^9, 3.8688726454002905`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"4ba8c121-cf29-4e8d-8884-effd66221f0b"],
+
+Cell[BoxData["0.025762020770999997`"], "Output",
+ CellChangeTimes->{3.8688726463531923`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"bd5f3278-1baa-4e29-9d18-1510e3cf4920"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{"GeometricDistribution", "[", "p", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8688726632896595`*^9, 3.868872668710272*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"222e64b4-fb8b-46fd-8e41-57bfe7f49904"],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{"\[FormalX]", ",", 
+   TagBox[GridBox[{
+      {"\[Piecewise]", GridBox[{
+         {
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "-", "p"}], ")"}], "\[FormalX]"], " ", "p"}], 
+          RowBox[{"\[FormalX]", "\[GreaterEqual]", "0"}]},
+         {"0", 
+          TagBox["True",
+           "PiecewiseDefault",
+           AutoDelete->True]}
+        },
+        AllowedDimensions->{2, Automatic},
+        Editable->True,
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.84]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}},
+        Selectable->True]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.35]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    "Piecewise",
+    DeleteWithContents->True,
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False,
+    StripWrapperBoxes->True], ",", "Listable"}], "]"}]], "Output",
+ CellChangeTimes->{3.8688726694757166`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"9d100865-7372-44b4-8ceb-be20201c1460"]
+}, Open  ]]
+},
+WindowSize->{581.25, 420.75},
+WindowMargins->{{215.25, Automatic}, {Automatic, 40.5}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 21, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"36016fea-9696-4887-ad68-386165c04fc0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 370, 7, 28, "Input",ExpressionUUID->"4ba8c121-cf29-4e8d-8884-effd66221f0b"],
+Cell[956, 31, 170, 2, 32, "Output",ExpressionUUID->"bd5f3278-1baa-4e29-9d18-1510e3cf4920"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1163, 38, 250, 4, 28, "Input",ExpressionUUID->"222e64b4-fb8b-46fd-8e41-57bfe7f49904"],
+Cell[1416, 44, 1635, 45, 75, "Output",ExpressionUUID->"9d100865-7372-44b4-8ceb-be20201c1460"]
+}, Open  ]]
+}
+]
+*)
+
